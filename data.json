@@ -1,0 +1,978 @@
+[
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "myblog",
+      "model": "article"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "ormdemo",
+      "model": "addressinfo"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "ormdemo",
+      "model": "course"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "ormdemo",
+      "model": "student"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "ormdemo",
+      "model": "teacher"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "ormdemo",
+      "model": "teacherassistant"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "ormdemo",
+      "model": "teacherassistant2"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "fevfsqslhn8up9wro3jahf5yt3wgi3dp",
+    "fields": {
+      "session_data": "MWI3ZTcxMWEwMTZiZGY5MDEwZDNkMGIxZTU3MDU2ZjkyODUwNGVmMTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmYTMwYzI5OGUyOGZhMjEwNjc2NjQxMzk2NTk5Njk1ZmFlNzFlMDZlIn0=",
+      "expire_date": "2019-09-29T08:21:32.945Z"
+    }
+  },
+  {
+    "model": "ormdemo.addressinfo",
+    "pk": 1,
+    "fields": {
+      "address": "\u5317\u4eac",
+      "pid": null
+    }
+  },
+  {
+    "model": "ormdemo.addressinfo",
+    "pk": 2,
+    "fields": {
+      "address": "\u4e0a\u6d77",
+      "pid": null
+    }
+  },
+  {
+    "model": "ormdemo.addressinfo",
+    "pk": 3,
+    "fields": {
+      "address": "\u671d\u9633\u533a",
+      "pid": 1
+    }
+  },
+  {
+    "model": "ormdemo.addressinfo",
+    "pk": 4,
+    "fields": {
+      "address": "\u6d77\u6dc0\u533a",
+      "pid": 1
+    }
+  },
+  {
+    "model": "ormdemo.teacher",
+    "pk": "Allen",
+    "fields": {
+      "introduction": "Java\u5de5\u7a0b\u5e08",
+      "fans": 123,
+      "created_at": "2019-09-15T10:26:48.223Z",
+      "updated_at": "2019-09-15T10:26:48.223Z"
+    }
+  },
+  {
+    "model": "ormdemo.teacher",
+    "pk": "Henry",
+    "fields": {
+      "introduction": "Golang\u5de5\u7a0b\u5e08",
+      "fans": 881,
+      "created_at": "2019-09-15T10:26:48.225Z",
+      "updated_at": "2019-09-15T10:26:48.225Z"
+    }
+  },
+  {
+    "model": "ormdemo.teacher",
+    "pk": "Jack",
+    "fields": {
+      "introduction": "Python\u5de5\u7a0b\u5e08",
+      "fans": 666,
+      "created_at": "2019-09-15T10:26:48.211Z",
+      "updated_at": "2019-09-15T10:26:48.212Z"
+    }
+  },
+  {
+    "model": "ormdemo.course",
+    "pk": "Golang\u7cfb\u5217\u6559\u7a0b1",
+    "fields": {
+      "type": "0",
+      "price": 238,
+      "volume": 3018,
+      "online": "2018-10-01",
+      "teacher": "Henry",
+      "created_at": "2019-09-15T10:26:48.256Z",
+      "updated_at": "2019-09-15T10:26:48.257Z"
+    }
+  },
+  {
+    "model": "ormdemo.course",
+    "pk": "Golang\u7cfb\u5217\u6559\u7a0b2",
+    "fields": {
+      "type": "1",
+      "price": 216,
+      "volume": 7436,
+      "online": "2018-10-01",
+      "teacher": "Henry",
+      "created_at": "2019-09-15T10:26:48.257Z",
+      "updated_at": "2019-09-15T10:26:48.257Z"
+    }
+  },
+  {
+    "model": "ormdemo.course",
+    "pk": "Golang\u7cfb\u5217\u6559\u7a0b3",
+    "fields": {
+      "type": "1",
+      "price": 275,
+      "volume": 3514,
+      "online": "2018-10-01",
+      "teacher": "Henry",
+      "created_at": "2019-09-15T10:26:48.257Z",
+      "updated_at": "2019-09-15T10:26:48.257Z"
+    }
+  },
+  {
+    "model": "ormdemo.course",
+    "pk": "Golang\u7cfb\u5217\u6559\u7a0b4",
+    "fields": {
+      "type": "1",
+      "price": 265,
+      "volume": 7330,
+      "online": "2018-10-01",
+      "teacher": "Henry",
+      "created_at": "2019-09-15T10:26:48.257Z",
+      "updated_at": "2019-09-15T10:26:48.257Z"
+    }
+  },
+  {
+    "model": "ormdemo.course",
+    "pk": "Java\u7cfb\u5217\u6559\u7a0b1",
+    "fields": {
+      "type": "2",
+      "price": 232,
+      "volume": 8946,
+      "online": "2018-10-01",
+      "teacher": "Allen",
+      "created_at": "2019-09-15T10:26:48.251Z",
+      "updated_at": "2019-09-15T10:26:48.251Z"
+    }
+  },
+  {
+    "model": "ormdemo.course",
+    "pk": "Java\u7cfb\u5217\u6559\u7a0b2",
+    "fields": {
+      "type": "0",
+      "price": 249,
+      "volume": 1001,
+      "online": "2018-10-01",
+      "teacher": "Allen",
+      "created_at": "2019-09-15T10:26:48.251Z",
+      "updated_at": "2019-09-15T10:26:48.251Z"
+    }
+  },
+  {
+    "model": "ormdemo.course",
+    "pk": "Java\u7cfb\u5217\u6559\u7a0b3",
+    "fields": {
+      "type": "0",
+      "price": 295,
+      "volume": 2406,
+      "online": "2018-10-01",
+      "teacher": "Allen",
+      "created_at": "2019-09-15T10:26:48.251Z",
+      "updated_at": "2019-09-15T10:26:48.251Z"
+    }
+  },
+  {
+    "model": "ormdemo.course",
+    "pk": "Java\u7cfb\u5217\u6559\u7a0b4",
+    "fields": {
+      "type": "2",
+      "price": 228,
+      "volume": 1599,
+      "online": "2018-10-01",
+      "teacher": "Allen",
+      "created_at": "2019-09-15T10:26:48.251Z",
+      "updated_at": "2019-09-15T10:26:48.251Z"
+    }
+  },
+  {
+    "model": "ormdemo.course",
+    "pk": "Python\u7cfb\u5217\u6559\u7a0b1",
+    "fields": {
+      "type": "0",
+      "price": 292,
+      "volume": 7432,
+      "online": "2018-10-01",
+      "teacher": "Jack",
+      "created_at": "2019-09-15T10:26:48.244Z",
+      "updated_at": "2019-09-15T10:26:48.244Z"
+    }
+  },
+  {
+    "model": "ormdemo.course",
+    "pk": "Python\u7cfb\u5217\u6559\u7a0b2",
+    "fields": {
+      "type": "0",
+      "price": 254,
+      "volume": 9419,
+      "online": "2018-10-01",
+      "teacher": "Jack",
+      "created_at": "2019-09-15T10:26:48.244Z",
+      "updated_at": "2019-09-15T10:26:48.244Z"
+    }
+  },
+  {
+    "model": "ormdemo.course",
+    "pk": "Python\u7cfb\u5217\u6559\u7a0b3",
+    "fields": {
+      "type": "2",
+      "price": 210,
+      "volume": 6130,
+      "online": "2018-10-01",
+      "teacher": "Jack",
+      "created_at": "2019-09-15T10:26:48.244Z",
+      "updated_at": "2019-09-15T10:26:48.244Z"
+    }
+  },
+  {
+    "model": "ormdemo.course",
+    "pk": "Python\u7cfb\u5217\u6559\u7a0b4",
+    "fields": {
+      "type": "0",
+      "price": 255,
+      "volume": 2328,
+      "online": "2018-10-01",
+      "teacher": "Jack",
+      "created_at": "2019-09-15T10:26:48.244Z",
+      "updated_at": "2019-09-15T10:26:48.244Z"
+    }
+  },
+  {
+    "model": "ormdemo.student",
+    "pk": "A\u540c\u5b66",
+    "fields": {
+      "age": 54,
+      "gender": "2",
+      "study_time": 858,
+      "created_at": "2019-09-15T10:26:48.263Z",
+      "updated_at": "2019-09-15T10:26:48.263Z",
+      "course": [
+        "Golang\u7cfb\u5217\u6559\u7a0b1",
+        "Golang\u7cfb\u5217\u6559\u7a0b2",
+        "Golang\u7cfb\u5217\u6559\u7a0b3",
+        "Golang\u7cfb\u5217\u6559\u7a0b4",
+        "Java\u7cfb\u5217\u6559\u7a0b1",
+        "Java\u7cfb\u5217\u6559\u7a0b2",
+        "Java\u7cfb\u5217\u6559\u7a0b3",
+        "Java\u7cfb\u5217\u6559\u7a0b4",
+        "Python\u7cfb\u5217\u6559\u7a0b1",
+        "Python\u7cfb\u5217\u6559\u7a0b2",
+        "Python\u7cfb\u5217\u6559\u7a0b3",
+        "Python\u7cfb\u5217\u6559\u7a0b4"
+      ]
+    }
+  },
+  {
+    "model": "ormdemo.student",
+    "pk": "B\u540c\u5b66",
+    "fields": {
+      "age": 36,
+      "gender": "0",
+      "study_time": 494,
+      "created_at": "2019-09-15T10:26:48.265Z",
+      "updated_at": "2019-09-15T10:26:48.265Z",
+      "course": [
+        "Golang\u7cfb\u5217\u6559\u7a0b1",
+        "Golang\u7cfb\u5217\u6559\u7a0b2",
+        "Golang\u7cfb\u5217\u6559\u7a0b3",
+        "Golang\u7cfb\u5217\u6559\u7a0b4",
+        "Java\u7cfb\u5217\u6559\u7a0b1",
+        "Java\u7cfb\u5217\u6559\u7a0b2",
+        "Java\u7cfb\u5217\u6559\u7a0b3",
+        "Java\u7cfb\u5217\u6559\u7a0b4",
+        "Python\u7cfb\u5217\u6559\u7a0b1",
+        "Python\u7cfb\u5217\u6559\u7a0b2",
+        "Python\u7cfb\u5217\u6559\u7a0b3",
+        "Python\u7cfb\u5217\u6559\u7a0b4"
+      ]
+    }
+  },
+  {
+    "model": "ormdemo.student",
+    "pk": "C\u540c\u5b66",
+    "fields": {
+      "age": 48,
+      "gender": "2",
+      "study_time": 274,
+      "created_at": "2019-09-15T10:26:48.267Z",
+      "updated_at": "2019-09-15T10:26:48.267Z",
+      "course": [
+        "Python\u7cfb\u5217\u6559\u7a0b1"
+      ]
+    }
+  },
+  {
+    "model": "ormdemo.student",
+    "pk": "D\u540c\u5b66",
+    "fields": {
+      "age": 39,
+      "gender": "0",
+      "study_time": 849,
+      "created_at": "2019-09-15T10:26:48.270Z",
+      "updated_at": "2019-09-15T10:26:48.270Z",
+      "course": [
+        "Python\u7cfb\u5217\u6559\u7a0b1"
+      ]
+    }
+  },
+  {
+    "model": "ormdemo.teacherassistant",
+    "pk": "\u52a9\u65591",
+    "fields": {
+      "hobby": "\u6155\u8bfe\u7f51\u5b66\u4e60",
+      "teacher": "Jack",
+      "created_at": "2019-09-15T10:26:48.292Z",
+      "updated_at": "2019-09-15T10:26:48.292Z"
+    }
+  },
+  {
+    "model": "ormdemo.teacherassistant",
+    "pk": "\u52a9\u65592",
+    "fields": {
+      "hobby": "\u770b\u4e66",
+      "teacher": "Allen",
+      "created_at": "2019-09-15T10:26:48.294Z",
+      "updated_at": "2019-09-15T10:26:48.294Z"
+    }
+  },
+  {
+    "model": "ormdemo.teacherassistant",
+    "pk": "\u52a9\u65593",
+    "fields": {
+      "hobby": "\u770b\u7535\u89c6",
+      "teacher": "Henry",
+      "created_at": "2019-09-15T10:26:48.296Z",
+      "updated_at": "2019-09-15T10:26:48.296Z"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add article",
+      "content_type": 7,
+      "codename": "add_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change article",
+      "content_type": 7,
+      "codename": "change_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete article",
+      "content_type": 7,
+      "codename": "delete_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view article",
+      "content_type": 7,
+      "codename": "view_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add address info",
+      "content_type": 8,
+      "codename": "add_addressinfo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change address info",
+      "content_type": 8,
+      "codename": "change_addressinfo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete address info",
+      "content_type": 8,
+      "codename": "delete_addressinfo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view address info",
+      "content_type": 8,
+      "codename": "view_addressinfo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add \u8bfe\u7a0b\u4fe1\u606f\u8868",
+      "content_type": 9,
+      "codename": "add_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change \u8bfe\u7a0b\u4fe1\u606f\u8868",
+      "content_type": 9,
+      "codename": "change_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete \u8bfe\u7a0b\u4fe1\u606f\u8868",
+      "content_type": 9,
+      "codename": "delete_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view \u8bfe\u7a0b\u4fe1\u606f\u8868",
+      "content_type": 9,
+      "codename": "view_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add \u5b66\u751f\u4fe1\u606f\u8868",
+      "content_type": 10,
+      "codename": "add_student"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change \u5b66\u751f\u4fe1\u606f\u8868",
+      "content_type": 10,
+      "codename": "change_student"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete \u5b66\u751f\u4fe1\u606f\u8868",
+      "content_type": 10,
+      "codename": "delete_student"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view \u5b66\u751f\u4fe1\u606f\u8868",
+      "content_type": 10,
+      "codename": "view_student"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add \u8bb2\u5e08\u4fe1\u606f\u8868",
+      "content_type": 11,
+      "codename": "add_teacher"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change \u8bb2\u5e08\u4fe1\u606f\u8868",
+      "content_type": 11,
+      "codename": "change_teacher"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete \u8bb2\u5e08\u4fe1\u606f\u8868",
+      "content_type": 11,
+      "codename": "delete_teacher"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view \u8bb2\u5e08\u4fe1\u606f\u8868",
+      "content_type": 11,
+      "codename": "view_teacher"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add \u52a9\u6559\u4fe1\u606f\u8868",
+      "content_type": 12,
+      "codename": "add_teacherassistant"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change \u52a9\u6559\u4fe1\u606f\u8868",
+      "content_type": 12,
+      "codename": "change_teacherassistant"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete \u52a9\u6559\u4fe1\u606f\u8868",
+      "content_type": 12,
+      "codename": "delete_teacherassistant"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view \u52a9\u6559\u4fe1\u606f\u8868",
+      "content_type": 12,
+      "codename": "view_teacherassistant"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add \u52a9\u6559\u4fe1\u606f\u8868",
+      "content_type": 13,
+      "codename": "add_teacherassistant2"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change \u52a9\u6559\u4fe1\u606f\u8868",
+      "content_type": 13,
+      "codename": "change_teacherassistant2"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete \u52a9\u6559\u4fe1\u606f\u8868",
+      "content_type": 13,
+      "codename": "delete_teacherassistant2"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view \u52a9\u6559\u4fe1\u606f\u8868",
+      "content_type": 13,
+      "codename": "view_teacherassistant2"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$SXh2Rf4VLGQi$1GPWvQn1E+5dxbkIi+GJ/OxFhN1E01ZCw0w+44T0ul0=",
+      "last_login": "2019-09-15T08:21:32.942Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2019-09-15T08:21:19.673Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2019-09-15T08:23:49.030Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "\u5317\u4eac",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2019-09-15T08:23:54.966Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "\u4e0a\u6d77",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2019-09-15T08:24:01.249Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "\u671d\u9633\u533a",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2019-09-15T08:24:06.736Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "\u6d77\u6dc0\u533a",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  }
+]
