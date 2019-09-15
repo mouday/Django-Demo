@@ -448,4 +448,9 @@ myblog/templates/myblog/index.html
 </ul>
 ```
 
+项目截图
+![](images/index.png)
+
+![](images/detail.png)
+
 
